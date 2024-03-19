@@ -29,6 +29,7 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -43,3 +44,4 @@ plugins:
 #   - vendor/ruby/
 
 theme: monophase
+remote_theme: zivhub/monophase@main
