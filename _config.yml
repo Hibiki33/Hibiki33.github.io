@@ -43,5 +43,5 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-theme: monophase
+# theme: monophase
 remote_theme: zivhub/monophase@main
