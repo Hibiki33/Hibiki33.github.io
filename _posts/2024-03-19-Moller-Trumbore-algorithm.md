@@ -12,7 +12,7 @@ Möller–Trumbore 算法（ Möller–Trumbore ray-triangle intersection algori
 
 会写这个主要是因为在腾讯天美的二面被问到了，让我给出判断空间中射线是否穿过一个三角形的方法。我当时的回答很常规，大概是这样：
 
-空间平面上任意一点 $p$ 的表达式：
+空间平面上任意一点 p 的表达式：
 
 $$ (P - P') \cdot \vec{n} = 0 $$
 
@@ -32,17 +32,17 @@ $$ t = \frac{(P'-O)\cdot\vec{n}}{\vec{d}\cdot\vec{n}} $$
 
 首先三角形平面上任意一点可以写成重心坐标的形式：
 
-$$ P = b_0P_0 + b_1P_1 + b_2P_2 = (1-b1-b2)P_0 + b_1P_1 + b_2P_2 $$​
+$$ P = b_0 P_0 + b_1 P_1 + b_2 P_2 = (1 - b_1 - b_2) P_0 + b_1 P_1 + b_2 P_2 $$ ​
 
 把空间射线上任意一点的表达式带入得：
 
-$$ O + t \vec{d} = (1-b1-b2)P_0 + b_1P_1 + b_2P_2 $$
+$$ O + t \vec{d} = ( 1 - b_1 - b_2) P_0 + b_1 P_1 + b_2 P_2 $$ 
 
-单纯看这个式子，从直观上可以说我们一定有解决的办法。因为一共有 $t$、$ b_1$ 和 $b_2 $ 三个未知量，而三维空间让我们可以有三个方程。
+单纯看这个式子，从直观上可以说我们一定有解决的办法。因为一共有 t、b1 和 b2 三个未知量，而三维空间让我们可以有三个方程。
 
 我们将上面的式子整理一下：
 
-$$ O - P_0 = b_1(P_1-P_0) + b_2(P_2-P_0) - t\vec{d} $$
+$$ O - P_0 = - t\vec{d} + b_1(P_1-P_0) + b_2(P_2-P_0)  $$
 
 将其中的已知量进行替换：
 
@@ -60,7 +60,7 @@ $$ S = b_1E_1 + b_2E_2 - t\vec{d} =\begin{bmatrix} -\vec{d} & E_1 & E_2 \end{bma
 
 $$ t = \frac{\det\begin{bmatrix} S & E_1 & E_2 \end{bmatrix}}{\det\begin{bmatrix} -\vec{d} & E_1 & E_2 \end{bmatrix}} = \frac{(S\times E_1)\cdot E_2}{ ( \vec{d}\times E_2)\cdot E_1 }$$
 
-同理分别解出 $b_1$ 和 $b_2$ ：
+同理分别解出 b1 和 b2 ：
 
 $$ b_1 = \frac{(\vec{d}\times E_2)\cdot S}{ ( \vec{d}\times E_2)\cdot E_1 } $$
 
