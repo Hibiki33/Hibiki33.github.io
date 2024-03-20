@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Möller–Trumbore算法"
-date:   2023-03-19 19:38:00 +0800
+date:   2024-03-19 19:38:00 +0800
 categories: Computer-Graphics
 math: true
 ---
