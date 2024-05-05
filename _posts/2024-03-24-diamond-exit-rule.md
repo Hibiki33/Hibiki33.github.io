@@ -6,7 +6,7 @@ categories: Computer-Graphics
 math: true
 ---
 
-"diamond-exit" rule（菱形退出法则）是 OpenGL 在理想状态下线段光栅化的标准，但不一定会被严格实现。
+"diamond-exit" rule（菱形退出法则）是 OpenGL 在理想状态下线段光栅化的标准。
 
 ## 定义
 

@@ -2,7 +2,7 @@
 layout: post
 title: "jittor安装和踩坑"
 date:   2024-05-02 17:00:00 +0800
-categories: Environment-Configuration
+categories: Env-Config
 ---
 
 记录jittor的安装过程和遇到的问题。

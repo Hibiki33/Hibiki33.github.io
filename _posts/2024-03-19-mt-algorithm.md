@@ -6,7 +6,7 @@ categories: Computer-Graphics
 math: true
 ---
 
-Möller–Trumbore 算法（ Möller–Trumbore ray-triangle intersection algorithm ）用于三维三维中射线和三角形的快速求交。该算法由 Tomas Möller 和 Ben Trumbore 于 1997 年提出，是计算机图形学中最常用的求交算法之一。Möller–Trumbore 算法计算量小，适用于实时渲染。
+Möller–Trumbore 算法（ Möller–Trumbore ray-triangle intersection algorithm ）用于三维三维中射线和三角形的快速求交。Möller–Trumbore 算法计算量小，适用于实时渲染。
 
 ## 算法引入
 
