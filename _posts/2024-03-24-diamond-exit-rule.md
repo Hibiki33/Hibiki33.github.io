@@ -20,7 +20,7 @@ $$ R_f = \lbrace (x, y) | |x - x_f| + |y - y_f| < 1/2 \rbrace $$
 
 在手册中有这么一张图可以形象地说明菱形区域。
 
-![diamond-exit-rule](/images/diamond-exit-rule.png)
+![diamond-exit-rule](/images/diamond_exit_rule/diamond-exit-rule.png)
 
 顾名思义，一条从起点到终点的线段，当其从这个菱形“退出”时，代表这个菱形的像素应该被渲染。当起止点都在坐标上时，"diamond-exit" rule 与 Bresenham 算法的区别在于最后一个像素不会被绘制，且当绘制首尾相接的线段时，不会重复绘制同一个点。
 
